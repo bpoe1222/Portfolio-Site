@@ -118,7 +118,6 @@ header nav ul li a:hover {
 .work-box {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 45%;
 }
 
 .work h2 {
@@ -126,9 +125,7 @@ header nav ul li a:hover {
 }
 
 .work a {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 10px 50px;
+    margin: 50px 0 10px 50px;
     text-decoration: none;
 }
 
@@ -145,17 +142,12 @@ header nav ul li a:hover {
 }
 
 .work-1-text h3{
-    display: flex;
-    flex-wrap: wrap;
     transform: translate(20%, -450%);
-    display: flex;
     color: #fff;
 }
 
-.run-buddy-link h3{
-    display: flex;
-    flex-wrap: wrap;
-    transform: translate(30%, -450%);
+.work-2-text h3{
+    transform: translate(33%, -450%);
     color: #fff;
 }
 
@@ -165,9 +157,7 @@ header nav ul li a:hover {
 
 .contact-me {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .contact-me h2 {
@@ -175,9 +165,13 @@ header nav ul li a:hover {
     margin-right: 25px;
 }
 
-.contact-me a {
+.contact-me-box {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-me a {
     text-decoration: none;
     color: #000;
     border-bottom: 2px black solid;
@@ -189,9 +183,10 @@ header nav ul li a:hover {
     border-bottom-width: 5px;
 }
 
-.quick-links-1, .quick-links-2, .quick-links-3, .quick-links-4 {
-    flex:1 5%;
-    margin-top: 100px;
+.quick-links-1, .quick-links-2, .quick-links-3, .quick-links-4 { 
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* End CSS for Contact Me section */
@@ -207,17 +202,26 @@ header nav ul li a:hover {
     padding-right: 3px;
 }
 
+.resume-link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .resume-link {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 700px;
     align-items: center;
     text-decoration: none;
     color: #000;
+    border-bottom: 2px black solid;
+    margin-left: 700px;
+    /* transform: translate(300%, 50%); */
 }
 
 .resume-link:hover {
     color: #FF0000;
+    border-bottom: #FF0000 2px solid;
 }
 
 /* End CSS for Resume section */
@@ -248,6 +252,76 @@ header nav ul li a:hover {
 
     .about-me p {
         width: 100%;
+    }
+
+    .contact-me-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-link {
+        transform: translate(100%, 50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: end;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        width: 100%;
+    }
+    .resume-link {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: end;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        width: 100%;
+        font-size: 20px;
+    }
+    .resume-link {
+    margin: 0;
     }
 }
 
