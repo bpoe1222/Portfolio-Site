@@ -112,6 +112,13 @@ header nav ul li a:hover {
 
 .work {
     display: flex;
+    flex-wrap: nowrap;
+}
+
+.work-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 45%;
 }
 
 .work h2 {
@@ -120,11 +127,8 @@ header nav ul li a:hover {
 
 .work a {
     display: flex;
-    padding: 0;
+    flex-wrap: wrap;
     margin: 0 0 10px 50px;
-    height: 350px;
-    width: 700px;
-    align-content: center;
     text-decoration: none;
 }
 
@@ -142,18 +146,15 @@ header nav ul li a:hover {
 
 .work-1-text h3{
     display: flex;
-    top: 50%;
-    left: 50%;
+    flex-wrap: wrap;
     transform: translate(20%, -450%);
     display: flex;
     color: #fff;
-    filter: none;
 }
 
-.work-2 h3 {
+.run-buddy-link h3{
     display: flex;
-    top: 65%;
-    left: 71%;
+    flex-wrap: wrap;
     transform: translate(30%, -450%);
     color: #fff;
 }
@@ -223,5 +224,31 @@ header nav ul li a:hover {
 
 /* Begin mobile responisve section */
 
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: end;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        width: 100%;
+    }
+}
 
 /* End mobile responsive section */
