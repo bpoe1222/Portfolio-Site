@@ -1,0 +1,227 @@
+/* CSS for entire site */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 55px;
+}
+
+p {
+    font-size: 40px;
+}
+
+.right-border {
+    border-right: 3px solid #0000FF;
+}
+
+/* End CSS for entire site */
+
+/* Begin CSS for Header */
+
+header {
+    background: url("../images/background.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    background: transparent;
+}
+
+header a:hover {
+    color: red;
+}
+
+/* Begin CSS for nav */
+
+header nav ul  {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+
+header nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin: 7px;
+    padding: 58px 7px 0 0;
+    font-size: 22px;
+    border-bottom: 2px #fff solid;
+}
+
+header nav ul li a:hover {
+    color: #FF0000;
+    border-bottom: 2px #FF0000 solid;
+    border-bottom-width: 5px;
+}
+
+/* End CSS for nav */
+
+/* End CSS for Header */
+
+/* Begin CSS for About Me section */
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me h2 {
+    padding-right: 48px;
+    margin-right: 15px
+}
+
+.about-me p {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    flex: 1;
+}
+
+.about-me-head {
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+    flex: 1 0 0 5%;
+}
+
+/* End CSS for About Me section */
+
+/* Begin CSS for Work section */
+
+.work {
+    display: flex;
+}
+
+.work h2 {
+    padding-right: 66px;
+}
+
+.work a {
+    display: flex;
+    padding: 0;
+    margin: 0 0 10px 50px;
+    height: 350px;
+    width: 700px;
+    align-content: center;
+    text-decoration: none;
+}
+
+.img-blur {
+    filter: blur(5px);
+    border: 1px aliceblue solid;
+    border-radius: 10px;
+}
+
+.img-blur:hover{
+    filter: none;
+    border: 1px aliceblue solid;
+    border-radius: 10px;
+}
+
+.work-1-text h3{
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, -450%);
+    display: flex;
+    color: #fff;
+    filter: none;
+}
+
+.work-2 h3 {
+    display: flex;
+    top: 65%;
+    left: 71%;
+    transform: translate(30%, -450%);
+    color: #fff;
+}
+
+/* End CSS for Work section */
+
+/* Begin CSS for Contact Me section */
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contact-me h2 {
+    justify-content: start;
+    margin-right: 25px;
+}
+
+.contact-me a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px black solid;
+}
+
+.contact-me a:hover {
+    color: #FF0000;
+    border-bottom: #FF0000 2px solid;
+    border-bottom-width: 5px;
+}
+
+.quick-links-1, .quick-links-2, .quick-links-3, .quick-links-4 {
+    flex:1 5%;
+    margin-top: 100px;
+}
+
+/* End CSS for Contact Me section */
+
+/* Begin CSS for Resume section */
+
+.resume  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume h2 {
+    padding-right: 3px;
+}
+
+.resume-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 700px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.resume-link:hover {
+    color: #FF0000;
+}
+
+/* End CSS for Resume section */
+
+/* Begin mobile responisve section */
+
+
+/* End mobile responsive section */
