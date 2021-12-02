@@ -147,12 +147,17 @@ header nav ul li a:hover {
 
 .work-1-text h3{
     transform: translate(20%, -450%);
-    color: #fff;
+    color: #000;
 }
 
 .work-2-text h3{
     transform: translate(33%, -450%);
-    color: #fff;
+    color: #000;
+}
+
+.work-4-text h3{
+    transform: translate(33%, -450%);
+    color: #000;
 }
 
 /* End CSS for Work section */
