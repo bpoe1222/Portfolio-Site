@@ -1,0 +1,162 @@
+@import '../../index.scss';
+
+.about-me {
+    background-color: #443737;
+    display: flex;
+    color: #fff;
+    overflow: hidden;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex: 0.5;
+        border-radius: 50%;
+        background-color: #000;
+        left: -15px;
+        height: 1000px;
+        @include mobile {
+            align-items: flex-start;
+        }
+
+        .img-holder {
+            background-color: #000;
+            overflow: hidden;
+            float: left;
+
+            img{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 125%;
+
+                @include mobile {
+                    width: 75%;
+                    transform: translateY(-5rem)
+                    translateX(3rem);
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        background-color: #FF4D00;
+        border-radius: 50px 0 0 50px;
+        position: relative;
+        overflow: hidden;
+        @include mobile {
+            width: 100%;
+            border-radius: 50px 50px 0 0;
+            overflow: hidden;
+        }
+
+        .container {
+            margin: 2rem 0 0 2rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include mobile {
+                margin-top: -1rem;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+                @include mobile {
+                    font-size: 2rem;
+                    margin-top: 0;
+                }
+            }
+
+            h2 {
+                font-size:  2rem ;
+                margin-bottom: 0.5rem;
+                @include mobile {
+                    font-size: 1.5rem;
+                }
+            }
+
+            h3 { 
+                font-size: 1.75rem;
+                margin-bottom:  0.5rem;
+                color: #443737 !important;
+                @include mobile {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        a{
+            position: absolute;
+            bottom: 10px;
+            color: #fff;
+            left: 45%;
+            overflow: hidden;
+            transition: all 2000ms ease-in-out;
+            @include mobile {
+                left: 40%;
+            }
+
+            .icon {
+                font-size: 5rem;
+                transform: translateY(0);
+                animation: arrowFloat 2000ms infinite;
+            }
+
+            @keyframes arrowFloat {
+                0%{
+                    transform: translateY(0)
+                }
+                50%{
+                    transform: translateY(15px);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+
+            }
+        }
+    }
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    color: #000;
+    -webkit-animation: blink 0.5s infinite;
+    -moz-animation: blink 0.5s infinite;
+    animation: blink 0.5s infinite;
+    animation-direction: alternate;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
