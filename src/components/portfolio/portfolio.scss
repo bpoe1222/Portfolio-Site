@@ -53,6 +53,10 @@
                 transition: all 500ms ease;
                 margin-bottom: -5px;
                 
+                @include mobile {
+                    border-radius: 15px;
+                    overflow: hidden;
+                }
             }
         }
 

@@ -37,6 +37,7 @@
 
                 @include mobile {
                     width: 75%;
+                    height: 10%;
                     transform: translateY(-5rem)
                     translateX(3rem);
                 }
@@ -105,6 +106,7 @@
             transition: all 2000ms ease-in-out;
             @include mobile {
                 left: 40%;
+                top: 60%;
             }
 
             .icon {
