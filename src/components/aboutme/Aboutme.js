@@ -3,6 +3,7 @@ import './aboutme.scss'
 import { KeyboardArrowDown } from '@material-ui/icons'
 import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
+import { GitHub, LinkedIn } from '@material-ui/icons'
 
 export default function Aboutme() {
 
@@ -30,6 +31,14 @@ export default function Aboutme() {
                 </div>
                 <a href='#portfolio'>
                     <KeyboardArrowDown className='icon' />
+                </a>
+            </div>
+            <div className='footer'>
+                <a href='https://github.com/bpoe1222' target='_blank'>
+                    <GitHub />
+                </a>
+                <a>
+                    <LinkedIn />
                 </a>
             </div>
         </div>

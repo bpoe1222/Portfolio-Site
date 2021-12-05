@@ -5,10 +5,26 @@
     display: flex;
     color: #fff;
     overflow: hidden;
+    position: relative;
 
     @include mobile {
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 48%;
+
+        @include mobile {
+            width: 99%;
+            justify-content: space-around;
+        }
     }
 
     .left {
@@ -20,6 +36,7 @@
         background-color: #000;
         left: -15px;
         height: 1000px;
+        overflow: hidden;
         @include mobile {
             align-items: flex-start;
         }
@@ -48,7 +65,7 @@
     .right {
         flex: 0.5;
         background-color: #FF4D00;
-        border-radius: 50px 0 0 50px;
+        border-radius: 50px 0 0 0;
         position: relative;
         overflow: hidden;
         @include mobile {
@@ -104,6 +121,7 @@
             left: 45%;
             overflow: hidden;
             transition: all 2000ms ease-in-out;
+            top: 85%;
             @include mobile {
                 left: 40%;
                 top: 60%;

@@ -5,6 +5,7 @@ import {
     featuredPortfolio,
     allAppPortfolio
 } from '../../Featured'
+import { GitHub, LinkedIn } from '@material-ui/icons'
 
 
 export default function Portfolio() {
@@ -60,6 +61,14 @@ export default function Portfolio() {
                 </div>
                     ))}
                 
+            </div>
+            <div className='footer'>
+                <a href='https://github.com/bpoe1222' target='_blank'>
+                    <GitHub />
+                </a>
+                <a href='https://www.linkedin.com/in/bailey-poe/' target='_blank'>
+                    <LinkedIn />
+                </a>
             </div>
         </div>
     )
