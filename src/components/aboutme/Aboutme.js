@@ -12,8 +12,9 @@ export default function Aboutme() {
     useEffect(() => {
         init(text.current, {
             showCursor: true,
-            backDelay: 1500,
-            strings: ['Web Developer', 'Freelancer', 'Visionary']
+            loop: false,
+            typeSpeed: 75,
+            strings: ['I live in Baytown, Texas and love front-end development. I am a Web Developer, freelancer, and visionary. Scroll to get to know more about me!']
         })
     }, [])
     return (
@@ -27,7 +28,7 @@ export default function Aboutme() {
                 <div className='container'>
                     <h2>Hello, my name is</h2>
                     <h1>Bailey Poe</h1>
-                    <h3><span ref={text}></span></h3>
+                    <h3><span ref={text} className='typer'></span></h3>
                 </div>
                 <a href='#portfolio'>
                     <KeyboardArrowDown className='icon' />
