@@ -50,14 +50,18 @@ export default function Portfolio() {
             <div className='container'>
                     {item.map((i) => (
                     <div className='item'>
-                    <a href={i.link} target='_blank'>
                     <img 
                     src={i.img}
                     alt={i.title}  
                     className='img'
                     />
-                    </a>
+                    <a href={i.link} target='_blank'>
                     <h3>{i.title}</h3>
+                    </a>
+                    <div className='repo-link'>
+                    <a href={i.repo} className='repo-link' target='_blank'>Link to Repo</a>
+                    </div>
+                    
                 </div>
                     ))}
                 
