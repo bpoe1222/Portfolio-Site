@@ -41,6 +41,16 @@
                     font-size: 1rem;
                     font-weight: 400;
                 }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation: downloadPulse 10000ms infinite;
+                    padding: 0 0 0 10px;
+                }
             }
         }
     }
@@ -87,6 +97,19 @@
                     transform: rotate(-45deg);
                 }
             }
+        }
+    }
+
+    @keyframes downloadPulse {
+        0% {
+            color: #fff;
+        }
+        50% {
+            color: #FF4D00;
+        }
+
+        100% {
+            color: #fff;
         }
     }
 }

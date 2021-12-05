@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.resume {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    h1 {
+        color: #fff;
+        text-align: center;
+        margin-top: 1%;
+        font-weight: 300;
+    }
+    img {
+        margin: auto;
+        width: 25%;
+        height: 75%;
+        border-radius: 5px;
+
+        @include mobile {
+            width: 70%;
+            height: 65%;
+        }
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 48%;
+        bottom: 3.5rem;
+        text-decoration: none;
+
+        @include mobile {
+            left: 40%;
+        }
+
+        button {
+            width: 5rem;
+            background-color: #FF4D00;
+            border: none;
+            padding: 0.25rem;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}

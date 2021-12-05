@@ -1,6 +1,6 @@
 import React from 'react'
 import './nav.scss'
-import { Mail, Phone } from '@material-ui/icons'
+import { Mail, Phone, GetAppSharp } from '@material-ui/icons'
 
 export default function Nav({ menuOpen, setMenuOpen }) {
     return (
@@ -15,6 +15,12 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                     <div className='contact'>
                         <Phone className='icon' />
                         <span>(832) 535-9279</span>
+                    </div>
+                    <div className='contact'>
+                        <a href='assets/Resume.pdf' download>
+                            <span>Download Resume</span>
+                            <GetAppSharp className='icon' />
+                        </a>
                     </div>
                 </div>
                 <div className='right'>
