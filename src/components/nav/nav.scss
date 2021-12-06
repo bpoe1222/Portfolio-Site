@@ -48,8 +48,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    animation: downloadPulse 10000ms infinite;
                     padding: 0 0 0 10px;
+
+                    
+                }
+                .resume {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    animation: downloadPulse 10000ms infinite;
                 }
             }
         }
@@ -79,7 +87,7 @@
     }
 
     &.active {
-        background-color: #FF4D00;
+        background-color: #FF0000;
 
         .hamburger {
             overflow: hidden;
@@ -105,7 +113,7 @@
             color: #fff;
         }
         50% {
-            color: #FF4D00;
+            color: #000;
         }
 
         100% {

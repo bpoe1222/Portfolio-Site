@@ -10,14 +10,14 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                     <a href='#aboutMe' className='logo'>Bailey Poe</a>
                     <div className='contact'>
                         <Mail className='icon' />
-                        <span>BaileyPoe1222@gmail.com</span>
+                        <a href='mailto:baileypoe1222@gmail.com'>BaileyPoe1222@gmail.com</a>
                     </div>
                     <div className='contact'>
                         <Phone className='icon' />
-                        <span>(832) 535-9279</span>
+                        <a href='tel:8325359279'>(832) 535-9279</a>
                     </div>
                     <div className='contact'>
-                        <a href='assets/Resume.pdf' download>
+                        <a href='assets/Resume.pdf' download className='resume'>
                             <span>Download Resume</span>
                             <GetAppSharp className='icon' />
                         </a>
@@ -30,7 +30,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                         <span className='line3'></span>
                         
                     </div>
-
+        
 
                 </div>
             </div>

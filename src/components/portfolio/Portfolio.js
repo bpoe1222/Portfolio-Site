@@ -5,10 +5,10 @@ import {
     featuredPortfolio,
     allAppPortfolio
 } from '../../Featured'
-import { GitHub, LinkedIn } from '@material-ui/icons'
+import { GitHub, LinkedIn, Facebook } from '@material-ui/icons'
 
 
-export default function Portfolio() {
+export default function Portfolio({ menuOpen, setMenuOpen }) {
     const [selected, setSelected] = useState('featured');
     const [item, setItem] = useState([]);
     const list = [
@@ -66,12 +66,15 @@ export default function Portfolio() {
                     ))}
                 
             </div>
-            <div className='footer'>
+            <div className={'footer ' + (menuOpen && 'active')}>
                 <a href='https://github.com/bpoe1222' target='_blank'>
                     <GitHub />
                 </a>
                 <a href='https://www.linkedin.com/in/bailey-poe/' target='_blank'>
                     <LinkedIn />
+                </a>
+                <a href=''>
+                    <Facebook />
                 </a>
             </div>
         </div>
