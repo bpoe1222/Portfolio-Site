@@ -64,7 +64,7 @@
     }
 
     .right{
-        .hamburger{
+        .hamburger-nav{
             width: 2rem;
             height: 1.5rem;
             display: flex;
@@ -89,7 +89,7 @@
     &.active {
         background-color: #FF0000;
 
-        .hamburger {
+        .hamburger-nav {
             overflow: hidden;
             span {
                 
